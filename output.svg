@@ -127,7 +127,7 @@
 <text x='675' y='534' font-family='Courier New, Courier, monospace' font-size='16' fill='#111111' font-weight='700'>WOOD</text>
 <text x='220' y='545' font-family='Courier New, Courier, monospace' font-size='16' fill='#111111' text-anchor='middle' font-weight='700'>LITTLE PITLANDS</text>
 <text x='533' y='318' font-family='Courier New, Courier, monospace' font-size='12' fill='#111111' text-anchor='middle' font-weight='700'>TURNING</text>
-<text x='533' y='334' font-family='Courier New, Courier, monospace' font-size='12' fill='#111111' text-anchor='middle' font-weight='700'>CIRCLE</text>
+<text x='533' y='330' font-family='Courier New, Courier, monospace' font-size='12' fill='#111111' text-anchor='middle' font-weight='700'>CIRCLE</text>
 </g>
 <g>
 <rect x='840' y='37.0' width='120' height='26' rx='4' fill='#6eea8a'/>
