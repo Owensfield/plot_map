@@ -27,12 +27,16 @@
     "pad_y": 6,
     "items": [
       {
-        "text": "1 tickle pickle cottage",
+        "text": "1 Tickle Pickle Cottage",
         "color": "#22d94f"
       },
       {
-        "text": "2 flip house",
+        "text": "2 Flipty Flopity House",
         "color": "#22d94f"
+      },
+      {
+        "text": "25 Tatooine",
+        "color": "#b83cff"
       }
     ]
   },

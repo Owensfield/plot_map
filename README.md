@@ -1,5 +1,7 @@
 # Owensfield Map (tube-style)
 
+![Rendered map](output.svg)
+
 This repo renders a clean, editable SVG map from a small YAML file.
 
 ## Files
