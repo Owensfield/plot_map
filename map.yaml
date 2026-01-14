@@ -1,0 +1,263 @@
+{
+  "meta": {
+    "title": "Owensfield Plot Map",
+    "width": 1200,
+    "height": 800,
+    "padding": 40,
+    "background": "#ffffff"
+  },
+  "style": {
+    "road_width": 12,
+    "road_stroke": "#1c4f86",
+    "plot_fill": "#fff9e6",
+    "plot_stroke": "#111111",
+    "plot_text": "#111111",
+    "label_text": "#111111",
+    "label_font": "Courier New, Courier, monospace",
+    "name_font": "Georgia, serif",
+    "legend_font": "Helvetica Neue, Arial, sans-serif"
+  },
+  "key": {
+    "x": 980,
+    "y": 110,
+    "line_height": 24,
+    "font_size": 14,
+    "char_width": 8,
+    "pad_x": 8,
+    "pad_y": 6,
+    "items": [
+      {
+        "text": "1 tickle pickle cottage",
+        "color": "#22d94f"
+      },
+      {
+        "text": "2 flip house",
+        "color": "#22d94f"
+      }
+    ]
+  },
+  "roads": [
+    {
+      "name": "Green Main",
+      "color": "#22d94f",
+      "points": [[320,160],[320,320],[550,320]]
+    },
+    {
+      "name": "Purple Main",
+      "color": "#b83cff",
+      "points": [[320,320],[320,520],[355,560],[660,560]]
+    },
+    {
+      "name": "Purple Loop",
+      "color": "#b83cff",
+      "points": [[320,380],[420,420],[420,500],[320,500],[320,380]]
+    },
+    {
+      "name": "Orange Spur",
+      "color": "#f08b2e",
+      "points": [[120,440],[320,440]]
+    },
+    {
+      "name": "Red Spur",
+      "color": "#e34234",
+      "points": [[610,290],[890,290]]
+    },
+    {
+      "name": "Blue Spur",
+      "color": "#2b6de0",
+      "points": [[610,350],[890,350]]
+    }
+  ],
+  "decorations": [
+    {
+      "type": "polyline",
+      "stroke": "#22d94f",
+      "width": 12,
+      "points": [[610,290],[670,320],[610,350],[550,320],[610,290]]
+    },
+    {
+      "type": "line",
+      "stroke": "#111111",
+      "width": 6,
+      "x1": 250,
+      "y1": 70,
+      "x2": 250,
+      "y2": 140
+    },
+    {
+      "type": "polygon",
+      "stroke": "#111111",
+      "width": 6,
+      "fill": "#111111",
+      "points": [[235,140],[265,140],[250,165]]
+    }
+  ],
+  "plots": [],
+  "labels": [
+    {
+      "text": "Owensfield Plot Map",
+      "x": 570,
+      "y": 90,
+      "size": 28,
+      "weight": "700"
+    },
+    {
+      "text": "WAY",
+      "x": 210,
+      "y": 70,
+      "size": 16
+    },
+    {
+      "text": "IN",
+      "x": 215,
+      "y": 90,
+      "size": 16
+    },
+    {
+      "text": "1",
+      "x": 330,
+      "y": 110,
+      "size": 16
+    },
+    {
+      "text": "2",
+      "x": 330,
+      "y": 130,
+      "size": 16
+    },
+    {
+      "text": "3",
+      "x": 330,
+      "y": 150,
+      "size": 16
+    },
+    {
+      "text": "4",
+      "x": 330,
+      "y": 170,
+      "size": 16
+    },
+    {
+      "text": "5",
+      "x": 300,
+      "y": 220,
+      "size": 16
+    },
+    {
+      "text": "6",
+      "x": 300,
+      "y": 240,
+      "size": 16
+    },
+    {
+      "text": "7",
+      "x": 300,
+      "y": 260,
+      "size": 16
+    },
+    {
+      "text": "8",
+      "x": 300,
+      "y": 280,
+      "size": 16
+    },
+    {
+      "text": "51",
+      "x": 370,
+      "y": 300,
+      "size": 16
+    },
+    {
+      "text": "50",
+      "x": 410,
+      "y": 300,
+      "size": 16
+    },
+    {
+      "text": "49",
+      "x": 610,
+      "y": 270,
+      "size": 16
+    },
+    {
+      "text": "48",
+      "x": 650,
+      "y": 270,
+      "size": 16
+    },
+    {
+      "text": "47",
+      "x": 690,
+      "y": 270,
+      "size": 16
+    },
+    {
+      "text": "TURNING",
+      "x": 610,
+      "y": 318,
+      "size": 12,
+      "anchor": "middle"
+    },
+    {
+      "text": "CIRCLE",
+      "x": 610,
+      "y": 334,
+      "size": 12,
+      "anchor": "middle"
+    },
+    {
+      "text": "30",
+      "x": 670,
+      "y": 380,
+      "size": 16
+    },
+    {
+      "text": "31",
+      "x": 710,
+      "y": 380,
+      "size": 16
+    },
+    {
+      "text": "32",
+      "x": 750,
+      "y": 380,
+      "size": 16
+    },
+    {
+      "text": "25",
+      "x": 355,
+      "y": 430,
+      "size": 16
+    },
+    {
+      "text": "24",
+      "x": 355,
+      "y": 455,
+      "size": 16
+    },
+    {
+      "text": "23",
+      "x": 355,
+      "y": 480,
+      "size": 16
+    },
+    {
+      "text": "15",
+      "x": 520,
+      "y": 590,
+      "size": 16
+    },
+    {
+      "text": "16",
+      "x": 560,
+      "y": 590,
+      "size": 16
+    },
+    {
+      "text": "17",
+      "x": 600,
+      "y": 590,
+      "size": 16
+    }
+  ]
+}

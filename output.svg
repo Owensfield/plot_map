@@ -1,0 +1,53 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='1200' height='800' viewBox='0 0 1200 800'>
+<rect width='1200' height='800' fill='#ffffff'/>
+<g fill='none' stroke-linecap='round' stroke-linejoin='round'>
+<polyline points='320,160 320,320 550,320' stroke='#22d94f' stroke-width='12'/>
+<polyline points='320,320 320,520 355,560 660,560' stroke='#b83cff' stroke-width='12'/>
+<polyline points='320,380 420,420 420,500 320,500 320,380' stroke='#b83cff' stroke-width='12'/>
+<polyline points='120,440 320,440' stroke='#f08b2e' stroke-width='12'/>
+<polyline points='610,290 890,290' stroke='#e34234' stroke-width='12'/>
+<polyline points='610,350 890,350' stroke='#2b6de0' stroke-width='12'/>
+</g>
+<g>
+</g>
+<g>
+<polyline points='610,290 670,320 610,350 550,320 610,290' stroke='#22d94f' stroke-width='12' fill='none' stroke-linecap='round' stroke-linejoin='round'/>
+<line x1='250' y1='70' x2='250' y2='140' stroke='#111111' stroke-width='6' stroke-linecap='round'/>
+<polygon points='235,140 265,140 250,165' stroke='#111111' stroke-width='6' fill='#111111' stroke-linejoin='round'/>
+</g>
+<g>
+<text x='570' y='90' font-family='Courier New, Courier, monospace' font-size='28' fill='#111111' font-weight='700'>Owensfield Plot Map</text>
+<text x='210' y='70' font-family='Courier New, Courier, monospace' font-size='16' fill='#111111' font-weight='700'>WAY</text>
+<text x='215' y='90' font-family='Courier New, Courier, monospace' font-size='16' fill='#111111' font-weight='700'>IN</text>
+<text x='330' y='110' font-family='Courier New, Courier, monospace' font-size='16' fill='#111111' font-weight='700'>1</text>
+<text x='330' y='130' font-family='Courier New, Courier, monospace' font-size='16' fill='#111111' font-weight='700'>2</text>
+<text x='330' y='150' font-family='Courier New, Courier, monospace' font-size='16' fill='#111111' font-weight='700'>3</text>
+<text x='330' y='170' font-family='Courier New, Courier, monospace' font-size='16' fill='#111111' font-weight='700'>4</text>
+<text x='300' y='220' font-family='Courier New, Courier, monospace' font-size='16' fill='#111111' font-weight='700'>5</text>
+<text x='300' y='240' font-family='Courier New, Courier, monospace' font-size='16' fill='#111111' font-weight='700'>6</text>
+<text x='300' y='260' font-family='Courier New, Courier, monospace' font-size='16' fill='#111111' font-weight='700'>7</text>
+<text x='300' y='280' font-family='Courier New, Courier, monospace' font-size='16' fill='#111111' font-weight='700'>8</text>
+<text x='370' y='300' font-family='Courier New, Courier, monospace' font-size='16' fill='#111111' font-weight='700'>51</text>
+<text x='410' y='300' font-family='Courier New, Courier, monospace' font-size='16' fill='#111111' font-weight='700'>50</text>
+<text x='610' y='270' font-family='Courier New, Courier, monospace' font-size='16' fill='#111111' font-weight='700'>49</text>
+<text x='650' y='270' font-family='Courier New, Courier, monospace' font-size='16' fill='#111111' font-weight='700'>48</text>
+<text x='690' y='270' font-family='Courier New, Courier, monospace' font-size='16' fill='#111111' font-weight='700'>47</text>
+<text x='610' y='318' font-family='Courier New, Courier, monospace' font-size='12' fill='#111111' text-anchor='middle' font-weight='700'>TURNING</text>
+<text x='610' y='334' font-family='Courier New, Courier, monospace' font-size='12' fill='#111111' text-anchor='middle' font-weight='700'>CIRCLE</text>
+<text x='670' y='380' font-family='Courier New, Courier, monospace' font-size='16' fill='#111111' font-weight='700'>30</text>
+<text x='710' y='380' font-family='Courier New, Courier, monospace' font-size='16' fill='#111111' font-weight='700'>31</text>
+<text x='750' y='380' font-family='Courier New, Courier, monospace' font-size='16' fill='#111111' font-weight='700'>32</text>
+<text x='355' y='430' font-family='Courier New, Courier, monospace' font-size='16' fill='#111111' font-weight='700'>25</text>
+<text x='355' y='455' font-family='Courier New, Courier, monospace' font-size='16' fill='#111111' font-weight='700'>24</text>
+<text x='355' y='480' font-family='Courier New, Courier, monospace' font-size='16' fill='#111111' font-weight='700'>23</text>
+<text x='520' y='590' font-family='Courier New, Courier, monospace' font-size='16' fill='#111111' font-weight='700'>15</text>
+<text x='560' y='590' font-family='Courier New, Courier, monospace' font-size='16' fill='#111111' font-weight='700'>16</text>
+<text x='600' y='590' font-family='Courier New, Courier, monospace' font-size='16' fill='#111111' font-weight='700'>17</text>
+</g>
+<g>
+<rect x='980' y='97.0' width='200' height='26' rx='4' fill='#22d94f'/>
+<text x='1080.0' y='110' text-anchor='middle' dominant-baseline='middle' font-family='Courier New, Courier, monospace' font-size='14' font-weight='700' fill='#111111'>1 tickle pickle cottage</text>
+<rect x='980' y='121.0' width='112' height='26' rx='4' fill='#22d94f'/>
+<text x='1036.0' y='134' text-anchor='middle' dominant-baseline='middle' font-family='Courier New, Courier, monospace' font-size='14' font-weight='700' fill='#111111'>2 flip house</text>
+</g>
+</svg>
