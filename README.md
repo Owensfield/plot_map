@@ -16,6 +16,17 @@ python3 render.py
 
 Open `output.svg` in a browser or vector editor.
 
+## PNG output (local)
+If you want `output.png` locally, install `rsvg-convert`:
+```bash
+sudo apt-get update
+sudo apt-get install -y librsvg2-bin
+```
+Then rerun:
+```bash
+python3 render.py
+```
+
 ## Editing
 - Edit or add roads in `map.yaml` under `roads` (each road is a list of points).
 - Add plots/houses under `plots` (number + name + position).

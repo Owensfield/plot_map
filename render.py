@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 import json
+import shutil
+import subprocess
 from pathlib import Path
 
 def svg_header(width, height):
@@ -206,6 +208,19 @@ def main():
     svg = render(data)
     Path("output.svg").write_text(svg)
     print("Rendered output.svg from map.yaml")
+
+    converter = shutil.which("rsvg-convert")
+    if converter:
+        try:
+            subprocess.run(
+                [converter, "output.svg", "-o", "output.png"],
+                check=True,
+            )
+            print("Rendered output.png from output.svg")
+        except subprocess.CalledProcessError as exc:
+            print(f"Failed to render output.png: {exc}")
+    else:
+        print("rsvg-convert not found; skipping output.png")
 
 
 if __name__ == "__main__":
