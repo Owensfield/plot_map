@@ -98,6 +98,22 @@
       "width": 6,
       "fill": "#111111",
       "points": [[235,140],[265,140],[250,165]]
+    },
+    {
+      "type": "image",
+      "href": "assets/trampolines.svg",
+      "x": 440,
+      "y": 330,
+      "width": 120,
+      "height": 120
+    },
+    {
+      "type": "image",
+      "href": "assets/notice_board.svg",
+      "x": 260,
+      "y": 290,
+      "width": 60,
+      "height": 60
     }
   ],
   "plots": [],

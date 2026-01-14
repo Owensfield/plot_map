@@ -4,8 +4,9 @@ from pathlib import Path
 
 def svg_header(width, height):
     return (
-        f"<svg xmlns='http://www.w3.org/2000/svg' width='{width}' height='{height}' "
-        f"viewBox='0 0 {width} {height}'>"
+        f"<svg xmlns='http://www.w3.org/2000/svg' "
+        f"xmlns:xlink='http://www.w3.org/1999/xlink' "
+        f"width='{width}' height='{height}' viewBox='0 0 {width} {height}'>"
     )
 
 def escape(text):
@@ -98,6 +99,15 @@ def render(data):
                 parts.append(
                     f"<circle cx='{deco['cx']}' cy='{deco['cy']}' r='{deco['r']}' "
                     f"stroke='{stroke}' stroke-width='{width}' fill='{fill}'/>"
+                )
+            elif dtype == "image":
+                href = deco.get("href")
+                if not href:
+                    continue
+                parts.append(
+                    f"<image href='{href}' x='{deco['x']}' y='{deco['y']}' "
+                    f"width='{deco['width']}' height='{deco['height']}' "
+                    f"preserveAspectRatio='{deco.get('preserve', 'xMidYMid meet')}'/>"
                 )
         parts.append("</g>")
 
