@@ -22,17 +22,23 @@ jobs:
         with:
           python-version: '3.x'
 
+      - name: Install SVG tools
+        run: sudo apt-get update && sudo apt-get install -y librsvg2-bin
+
       - name: Render SVG
         run: python3 render.py
 
-      - name: Commit output.svg
+      - name: Render PNG
+        run: rsvg-convert output.svg -o output.png
+
+      - name: Commit outputs
         run: |
-          if git diff --quiet -- output.svg; then
-            echo "No changes to output.svg"
+          if git diff --quiet -- output.svg output.png; then
+            echo "No changes to outputs"
             exit 0
           fi
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
-          git add output.svg
-          git commit -m "Update output.svg"
+          git add output.svg output.png
+          git commit -m "Update outputs"
           git push
