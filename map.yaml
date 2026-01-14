@@ -4,7 +4,8 @@
     "width": 1320,
     "height": 680,
     "padding": 40,
-    "background": "#ffffff"
+    "background": "#ffffff",
+    "png_zoom": 2
   },
   "style": {
     "road_width": 12,
@@ -12,80 +13,397 @@
     "plot_fill": "#fff9e6",
     "plot_stroke": "#111111",
     "plot_text": "#111111",
+    "plot_size": 18,
     "label_text": "#111111",
     "label_font": "Courier New, Courier, monospace",
     "name_font": "Georgia, serif",
     "legend_font": "Helvetica Neue, Arial, sans-serif"
   },
+  "groups": [
+    {
+      "id": "green",
+      "name": "Green Main",
+      "color": "#6eea8a",
+      "text": "#111111"
+    },
+    {
+      "id": "purple",
+      "name": "Purple Main",
+      "color": "#d28bff",
+      "text": "#111111"
+    },
+    {
+      "id": "red",
+      "name": "Red Spur",
+      "color": "#f07a6e",
+      "text": "#111111"
+    },
+    {
+      "id": "blue",
+      "name": "Blue Spur",
+      "color": "#6ea7ff",
+      "text": "#111111"
+    }
+  ],
   "key": {
-    "x": 980,
-    "y": 110,
+    "x": 840,
+    "y": 50,
     "line_height": 24,
     "font_size": 14,
     "char_width": 8,
     "pad_x": 8,
     "pad_y": 6,
+    "columns": 2,
+    "rows_per_col": 26,
+    "column_gap": 40,
     "items": [
       {
-        "text": "1 Tickle Pickle Cottage",
-        "color": "#22d94f"
+        "text": "1 Lorem Ipsum",
+        "color": "#6eea8a"
       },
       {
-        "text": "2 Flipty Flopity House",
-        "color": "#22d94f"
+        "text": "2 Lorem Ipsum",
+        "color": "#6eea8a"
       },
       {
-        "text": "30 Pinky Ponky Place",
-        "color": "#2b6de0"
+        "text": "3 Lorem Ipsum",
+        "color": "#6eea8a"
       },
       {
-        "text": "31 Wibble Wobble Way",
-        "color": "#2b6de0"
+        "text": "4 Lorem Ipsum",
+        "color": "#6eea8a"
       },
       {
-        "text": "25 Tatooine",
-        "color": "#b83cff"
+        "text": "5 Lorem Ipsum",
+        "color": "#6eea8a"
+      },
+      {
+        "text": "6 Lorem Ipsum",
+        "color": "#6eea8a"
+      },
+      {
+        "text": "7 Lorem Ipsum",
+        "color": "#6eea8a"
+      },
+      {
+        "text": "8 Lorem Ipsum",
+        "color": "#6eea8a"
+      },
+      {
+        "text": "9 Lorem Ipsum",
+        "color": "#d28bff"
+      },
+      {
+        "text": "10 Lorem Ipsum",
+        "color": "#d28bff"
+      },
+      {
+        "text": "11 Lorem Ipsum",
+        "color": "#d28bff"
+      },
+      {
+        "text": "12 Lorem Ipsum",
+        "color": "#d28bff"
+      },
+      {
+        "text": "13 Lorem Ipsum",
+        "color": "#d28bff"
+      },
+      {
+        "text": "14 Lorem Ipsum",
+        "color": "#d28bff"
+      },
+      {
+        "text": "15 Lorem Ipsum",
+        "color": "#d28bff"
+      },
+      {
+        "text": "16 Lorem Ipsum",
+        "color": "#d28bff"
+      },
+      {
+        "text": "17 Lorem Ipsum",
+        "color": "#d28bff"
+      },
+      {
+        "text": "18 Lorem Ipsum",
+        "color": "#d28bff"
+      },
+      {
+        "text": "19 Lorem Ipsum",
+        "color": "#d28bff"
+      },
+      {
+        "text": "20 Lorem Ipsum",
+        "color": "#d28bff"
+      },
+      {
+        "text": "21 Lorem Ipsum",
+        "color": "#d28bff"
+      },
+      {
+        "text": "22 Lorem Ipsum",
+        "color": "#d28bff"
+      },
+      {
+        "text": "23 Lorem Ipsum",
+        "color": "#d28bff"
+      },
+      {
+        "text": "24 Lorem Ipsum",
+        "color": "#d28bff"
+      },
+      {
+        "text": "25 Lorem Ipsum",
+        "color": "#d28bff"
+      },
+      {
+        "text": "26 Lorem Ipsum",
+        "color": "#6eea8a"
+      },
+      {
+        "text": "27 Lorem Ipsum",
+        "color": "#6eea8a"
+      },
+      {
+        "text": "28 Lorem Ipsum",
+        "color": "#6eea8a"
+      },
+      {
+        "text": "29 Lorem Ipsum",
+        "color": "#6eea8a"
+      },
+      {
+        "text": "30 Lorem Ipsum",
+        "color": "#6ea7ff"
+      },
+      {
+        "text": "31 Lorem Ipsum",
+        "color": "#6ea7ff"
+      },
+      {
+        "text": "32 Lorem Ipsum",
+        "color": "#6ea7ff"
+      },
+      {
+        "text": "33 Lorem Ipsum",
+        "color": "#6ea7ff"
+      },
+      {
+        "text": "34 Lorem Ipsum",
+        "color": "#6ea7ff"
+      },
+      {
+        "text": "35 Lorem Ipsum",
+        "color": "#6ea7ff"
+      },
+      {
+        "text": "36 Lorem Ipsum",
+        "color": "#6ea7ff"
+      },
+      {
+        "text": "37 Lorem Ipsum",
+        "color": "#6ea7ff"
+      },
+      {
+        "text": "38 Lorem Ipsum",
+        "color": "#6ea7ff"
+      },
+      {
+        "text": "39 Lorem Ipsum",
+        "color": "#6ea7ff"
+      },
+      {
+        "text": "40 Lorem Ipsum",
+        "color": "#6ea7ff"
+      },
+      {
+        "text": "41 Lorem Ipsum",
+        "color": "#6ea7ff"
+      },
+      {
+        "text": "42 Lorem Ipsum",
+        "color": "#6ea7ff"
+      },
+      {
+        "text": "43 Lorem Ipsum",
+        "color": "#6ea7ff"
+      },
+      {
+        "text": "44 Lorem Ipsum",
+        "color": "#f07a6e"
+      },
+      {
+        "text": "45 Lorem Ipsum",
+        "color": "#f07a6e"
+      },
+      {
+        "text": "46 Lorem Ipsum",
+        "color": "#f07a6e"
+      },
+      {
+        "text": "47 Lorem Ipsum",
+        "color": "#f07a6e"
+      },
+      {
+        "text": "48 Lorem Ipsum",
+        "color": "#f07a6e"
+      },
+      {
+        "text": "49 Lorem Ipsum",
+        "color": "#f07a6e"
+      },
+      {
+        "text": "50 Lorem Ipsum",
+        "color": "#6eea8a"
+      },
+      {
+        "text": "51 Lorem Ipsum",
+        "color": "#6eea8a"
       }
     ]
   },
   "roads": [
     {
       "name": "Green Main",
-      "color": "#22d94f",
-      "points": [[320,160],[320,320],[550,320]]
+      "color": "#6eea8a",
+      "points": [
+        [
+          320,
+          160
+        ],
+        [
+          320,
+          320
+        ],
+        [
+          473,
+          320
+        ]
+      ]
     },
     {
       "name": "Purple Main",
-      "color": "#b83cff",
-      "points": [[320,320],[320,520],[355,560],[660,560]]
+      "color": "#d28bff",
+      "points": [
+        [
+          320,
+          320
+        ],
+        [
+          320,
+          520
+        ],
+        [
+          355,
+          560
+        ],
+        [
+          660,
+          560
+        ]
+      ]
     },
     {
       "name": "Purple Loop",
-      "color": "#b83cff",
-      "points": [[320,380],[420,420],[420,500],[320,500],[320,380]]
+      "color": "#d28bff",
+      "points": [
+        [
+          320,
+          380
+        ],
+        [
+          420,
+          420
+        ],
+        [
+          420,
+          500
+        ],
+        [
+          320,
+          500
+        ],
+        [
+          320,
+          380
+        ]
+      ]
     },
     {
       "name": "Orange Spur",
-      "color": "#f08b2e",
-      "points": [[120,440],[320,440]]
+      "color": "#f5b46a",
+      "points": [
+        [
+          120,
+          520
+        ],
+        [
+          320,
+          520
+        ]
+      ]
     },
     {
       "name": "Red Spur",
-      "color": "#e34234",
-      "points": [[610,290],[890,290]]
+      "color": "#f07a6e",
+      "points": [
+        [
+          533,
+          290
+        ],
+        [
+          813,
+          290
+        ]
+      ]
     },
     {
       "name": "Blue Spur",
-      "color": "#2b6de0",
-      "points": [[610,350],[890,350]]
+      "color": "#6ea7ff",
+      "points": [
+        [
+          533,
+          350
+        ],
+        [
+          813,
+          350
+        ]
+      ]
     }
   ],
   "decorations": [
     {
       "type": "polyline",
-      "stroke": "#22d94f",
+      "stroke": "#6eea8a",
       "width": 12,
-      "points": [[610,290],[670,320],[610,350],[550,320],[610,290]]
+      "points": [
+        [
+          533,
+          290
+        ],
+        [
+          575,
+          310
+        ],
+        [
+          575,
+          330
+        ],
+        [
+          533,
+          350
+        ],
+        [
+          473,
+          320
+        ],
+        [
+          533,
+          290
+        ]
+      ]
     },
     {
       "type": "line",
@@ -101,15 +419,57 @@
       "stroke": "#111111",
       "width": 6,
       "fill": "#111111",
-      "points": [[235,140],[265,140],[250,165]]
+      "points": [
+        [
+          235,
+          140
+        ],
+        [
+          265,
+          140
+        ],
+        [
+          250,
+          165
+        ]
+      ]
+    },
+    {
+      "type": "line",
+      "stroke": "#111111",
+      "width": 6,
+      "x1": 660,
+      "y1": 542,
+      "x2": 730,
+      "y2": 542
+    },
+    {
+      "type": "polygon",
+      "stroke": "#111111",
+      "width": 6,
+      "fill": "#111111",
+      "points": [
+        [
+          730,
+          527
+        ],
+        [
+          730,
+          557
+        ],
+        [
+          755,
+          542
+        ]
+      ]
     },
     {
       "type": "image",
       "href": "assets/trampolines.svg",
-      "x": 440,
-      "y": 330,
-      "width": 120,
-      "height": 120
+      "x": 460,
+      "y": 365,
+      "width": 62,
+      "height": 62
     },
     {
       "type": "image",
@@ -120,11 +480,312 @@
       "height": 60
     }
   ],
-  "plots": [],
+  "plots": [
+    {
+      "id": "1",
+      "x": 340,
+      "y": 110,
+      "group": "green"
+    },
+    {
+      "id": "2",
+      "x": 340,
+      "y": 136,
+      "group": "green"
+    },
+    {
+      "id": "3",
+      "x": 340,
+      "y": 162,
+      "group": "green"
+    },
+    {
+      "id": "4",
+      "x": 340,
+      "y": 188,
+      "group": "green"
+    },
+    {
+      "id": "5",
+      "x": 300,
+      "y": 210,
+      "group": "green"
+    },
+    {
+      "id": "6",
+      "x": 300,
+      "y": 234,
+      "group": "green"
+    },
+    {
+      "id": "7",
+      "x": 300,
+      "y": 258,
+      "group": "green"
+    },
+    {
+      "id": "8",
+      "x": 300,
+      "y": 282,
+      "group": "green"
+    },
+    {
+      "id": "9",
+      "x": 285,
+      "y": 360,
+      "group": "purple"
+    },
+    {
+      "id": "10",
+      "x": 285,
+      "y": 400,
+      "group": "purple"
+    },
+    {
+      "id": "11",
+      "x": 285,
+      "y": 440,
+      "group": "purple"
+    },
+    {
+      "id": "12",
+      "x": 285,
+      "y": 480,
+      "group": "purple"
+    },
+    {
+      "id": "13",
+      "x": 350,
+      "y": 525,
+      "group": "purple"
+    },
+    {
+      "id": "14",
+      "x": 448,
+      "y": 590,
+      "group": "purple"
+    },
+    {
+      "id": "15",
+      "x": 488,
+      "y": 590,
+      "group": "purple"
+    },
+    {
+      "id": "16",
+      "x": 528,
+      "y": 590,
+      "group": "purple"
+    },
+    {
+      "id": "17",
+      "x": 568,
+      "y": 590,
+      "group": "purple"
+    },
+    {
+      "id": "18",
+      "x": 390,
+      "y": 525,
+      "group": "purple"
+    },
+    {
+      "id": "19",
+      "x": 450,
+      "y": 525,
+      "group": "purple"
+    },
+    {
+      "id": "20",
+      "x": 450,
+      "y": 465,
+      "group": "purple"
+    },
+    {
+      "id": "21",
+      "x": 450,
+      "y": 495,
+      "group": "purple"
+    },
+    {
+      "id": "22",
+      "x": 450,
+      "y": 435,
+      "group": "purple"
+    },
+    {
+      "id": "23",
+      "x": 355,
+      "y": 480,
+      "group": "purple"
+    },
+    {
+      "id": "24",
+      "x": 355,
+      "y": 455,
+      "group": "purple"
+    },
+    {
+      "id": "25",
+      "x": 355,
+      "y": 430,
+      "group": "purple"
+    },
+    {
+      "id": "26",
+      "x": 485,
+      "y": 435,
+      "group": "green"
+    },
+    {
+      "id": "27",
+      "x": 510,
+      "y": 435,
+      "group": "green"
+    },
+    {
+      "id": "28",
+      "x": 535,
+      "y": 435,
+      "group": "green"
+    },
+    {
+      "id": "29",
+      "x": 560,
+      "y": 435,
+      "group": "green"
+    },
+    {
+      "id": "30",
+      "x": 593,
+      "y": 380,
+      "group": "blue"
+    },
+    {
+      "id": "31",
+      "x": 623,
+      "y": 380,
+      "group": "blue"
+    },
+    {
+      "id": "32",
+      "x": 653,
+      "y": 380,
+      "group": "blue"
+    },
+    {
+      "id": "34",
+      "x": 683,
+      "y": 380,
+      "group": "blue"
+    },
+    {
+      "id": "35",
+      "x": 713,
+      "y": 380,
+      "group": "blue"
+    },
+    {
+      "id": "36",
+      "x": 743,
+      "y": 380,
+      "group": "blue"
+    },
+    {
+      "id": "37",
+      "x": 773,
+      "y": 380,
+      "group": "blue"
+    },
+    {
+      "id": "38",
+      "x": 763,
+      "y": 320,
+      "group": "blue"
+    },
+    {
+      "id": "39",
+      "x": 733,
+      "y": 320,
+      "group": "blue"
+    },
+    {
+      "id": "40",
+      "x": 703,
+      "y": 320,
+      "group": "blue"
+    },
+    {
+      "id": "41",
+      "x": 643,
+      "y": 320,
+      "group": "blue"
+    },
+    {
+      "id": "42",
+      "x": 613,
+      "y": 320,
+      "group": "blue"
+    },
+    {
+      "id": "43",
+      "x": 673,
+      "y": 320,
+      "group": "blue"
+    },
+    {
+      "id": "44",
+      "x": 643,
+      "y": 270,
+      "group": "red"
+    },
+    {
+      "id": "45",
+      "x": 683,
+      "y": 270,
+      "group": "red"
+    },
+    {
+      "id": "46",
+      "x": 723,
+      "y": 270,
+      "group": "red"
+    },
+    {
+      "id": "47",
+      "x": 613,
+      "y": 270,
+      "group": "red"
+    },
+    {
+      "id": "48",
+      "x": 573,
+      "y": 270,
+      "group": "red"
+    },
+    {
+      "id": "49",
+      "x": 533,
+      "y": 270,
+      "group": "red"
+    },
+    {
+      "id": "50",
+      "x": 410,
+      "y": 300,
+      "group": "green"
+    },
+    {
+      "id": "51",
+      "x": 370,
+      "y": 300,
+      "group": "green"
+    }
+  ],
   "labels": [
     {
       "text": "Owensfield Plot Map",
-      "x": 570,
+      "x": 430,
       "y": 90,
       "size": 28,
       "weight": "700"
@@ -142,150 +803,37 @@
       "size": 16
     },
     {
-      "text": "1",
-      "x": 330,
-      "y": 110,
+      "text": "CASWELL",
+      "x": 665,
+      "y": 514,
       "size": 16
     },
     {
-      "text": "2",
-      "x": 330,
-      "y": 130,
+      "text": "WOOD",
+      "x": 675,
+      "y": 534,
       "size": 16
     },
     {
-      "text": "3",
-      "x": 330,
-      "y": 150,
-      "size": 16
-    },
-    {
-      "text": "4",
-      "x": 330,
-      "y": 170,
-      "size": 16
-    },
-    {
-      "text": "5",
-      "x": 300,
-      "y": 220,
-      "size": 16
-    },
-    {
-      "text": "6",
-      "x": 300,
-      "y": 240,
-      "size": 16
-    },
-    {
-      "text": "7",
-      "x": 300,
-      "y": 260,
-      "size": 16
-    },
-    {
-      "text": "8",
-      "x": 300,
-      "y": 280,
-      "size": 16
-    },
-    {
-      "text": "51",
-      "x": 370,
-      "y": 300,
-      "size": 16
-    },
-    {
-      "text": "50",
-      "x": 410,
-      "y": 300,
-      "size": 16
-    },
-    {
-      "text": "49",
-      "x": 610,
-      "y": 270,
-      "size": 16
-    },
-    {
-      "text": "48",
-      "x": 650,
-      "y": 270,
-      "size": 16
-    },
-    {
-      "text": "47",
-      "x": 690,
-      "y": 270,
-      "size": 16
+      "text": "LITTLE PITLANDS",
+      "x": 220,
+      "y": 545,
+      "size": 16,
+      "anchor": "middle"
     },
     {
       "text": "TURNING",
-      "x": 610,
+      "x": 533,
       "y": 318,
       "size": 12,
       "anchor": "middle"
     },
     {
       "text": "CIRCLE",
-      "x": 610,
+      "x": 533,
       "y": 334,
       "size": 12,
       "anchor": "middle"
-    },
-    {
-      "text": "30",
-      "x": 670,
-      "y": 380,
-      "size": 16
-    },
-    {
-      "text": "31",
-      "x": 710,
-      "y": 380,
-      "size": 16
-    },
-    {
-      "text": "32",
-      "x": 750,
-      "y": 380,
-      "size": 16
-    },
-    {
-      "text": "25",
-      "x": 355,
-      "y": 430,
-      "size": 16
-    },
-    {
-      "text": "24",
-      "x": 355,
-      "y": 455,
-      "size": 16
-    },
-    {
-      "text": "23",
-      "x": 355,
-      "y": 480,
-      "size": 16
-    },
-    {
-      "text": "15",
-      "x": 520,
-      "y": 590,
-      "size": 16
-    },
-    {
-      "text": "16",
-      "x": 560,
-      "y": 590,
-      "size": 16
-    },
-    {
-      "text": "17",
-      "x": 600,
-      "y": 590,
-      "size": 16
     }
   ]
 }

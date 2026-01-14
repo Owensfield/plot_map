@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import json
+import math
 import shutil
 import subprocess
 from pathlib import Path
@@ -53,13 +54,16 @@ def render(data):
         group = groups.get(group_id)
         fill = group["color"] if group else style["plot_fill"]
         text_color = group.get("text", "#ffffff") if group else style["plot_text"]
+        plot_size = style.get("plot_size", 24)
         parts.append(
-            f"<rect x='{x - 12}' y='{y - 12}' width='24' height='24' rx='4' "
+            f"<rect x='{x - plot_size / 2}' y='{y - plot_size / 2}' "
+            f"width='{plot_size}' height='{plot_size}' rx='4' "
             f"fill='{fill}' stroke='{style['plot_stroke']}' stroke-width='2'/>"
         )
         parts.append(
             f"<text x='{x}' y='{y + 6}' text-anchor='middle' "
-            f"font-family='{style['label_font']}' font-size='12' fill='{text_color}'>{label}</text>"
+            f"font-family='{style['label_font']}' font-size='12' font-weight='700' "
+            f"fill='{text_color}'>{label}</text>"
         )
         if plot.get("name"):
             name = escape(plot["name"])
@@ -116,7 +120,6 @@ def render(data):
     # Labels
     parts.append("<g>")
     for label in data.get("labels", []):
-        text = escape(label["text"])
         size = label.get("size", 16)
         color = label.get("color", style["label_text"])
         font = label.get("font", style["label_font"])
@@ -136,7 +139,30 @@ def render(data):
             attrs.append(f"font-weight='{weight}'")
         if rotate:
             attrs.append(f"transform='rotate({rotate} {label['x']} {label['y']})'")
-        parts.append(f"<text {' '.join(attrs)}>{text}</text>")
+        spans = label.get("spans")
+        if spans:
+            parts.append(f"<text {' '.join(attrs)}>")
+            for span in spans:
+                span_x = span.get("x", label["x"])
+                span_y = span.get("y", label["y"])
+                parts.append(
+                    f"<tspan x='{span_x}' y='{span_y}'>{escape(str(span.get('text', '')))}</tspan>"
+                )
+            parts.append("</text>")
+        else:
+            lines = label.get("lines")
+            if lines:
+                line_height = label.get("line_height", size + 4)
+                parts.append(f"<text {' '.join(attrs)}>")
+                for idx, line in enumerate(lines):
+                    y = label["y"] + idx * line_height
+                    parts.append(
+                        f"<tspan x='{label['x']}' y='{y}'>{escape(str(line))}</tspan>"
+                    )
+                parts.append("</text>")
+            else:
+                text = escape(label["text"])
+                parts.append(f"<text {' '.join(attrs)}>{text}</text>")
     parts.append("</g>")
 
     # Key (simple list of colored labels)
@@ -149,22 +175,50 @@ def render(data):
         pad_y = key.get("pad_y", 6)
         font_size = key.get("font_size", 14)
         char_width = key.get("char_width", 8)
+        columns = key.get("columns", 1)
+        column_gap = key.get("column_gap", 20)
+        items = key["items"]
+        rows_per_col = key.get("rows_per_col")
+        if not rows_per_col:
+            rows_per_col = math.ceil(len(items) / columns)
+
+        col_widths = [0] * columns
+        for idx, item in enumerate(items):
+            col = idx // rows_per_col
+            if col >= columns:
+                col = columns - 1
+            text = escape(item.get("text", ""))
+            rect_w = max(40, len(text) * char_width) + pad_x * 2
+            if rect_w > col_widths[col]:
+                col_widths[col] = rect_w
+
+        col_offsets = [0] * columns
+        running = 0
+        for col in range(columns):
+            col_offsets[col] = running
+            running += col_widths[col] + column_gap
+
         parts.append("<g>")
-        for idx, item in enumerate(key["items"]):
+        for idx, item in enumerate(items):
             text = escape(item.get("text", ""))
             if not text:
                 continue
             color = item.get("color", style["label_text"])
-            y = ky + idx * line_height
+            col = idx // rows_per_col
+            row = idx % rows_per_col
+            if col >= columns:
+                col = columns - 1
+            x = kx + col_offsets[col]
+            y = ky + row * line_height
             rect_w = max(40, len(text) * char_width) + pad_x * 2
             rect_h = font_size + pad_y * 2
             rect_y = y - rect_h / 2
             parts.append(
-                f"<rect x='{kx}' y='{rect_y}' width='{rect_w}' height='{rect_h}' rx='4' "
+                f"<rect x='{x}' y='{rect_y}' width='{rect_w}' height='{rect_h}' rx='4' "
                 f"fill='{color}'/>"
             )
             parts.append(
-                f"<text x='{kx + rect_w / 2}' y='{y}' text-anchor='middle' dominant-baseline='middle' "
+                f"<text x='{x + rect_w / 2}' y='{y}' text-anchor='middle' dominant-baseline='middle' "
                 f"font-family='{style['label_font']}' font-size='{font_size}' font-weight='700' "
                 f"fill='#111111'>{text}</text>"
             )
@@ -211,9 +265,10 @@ def main():
 
     converter = shutil.which("rsvg-convert")
     if converter:
+        png_zoom = data.get("meta", {}).get("png_zoom", 2)
         try:
             subprocess.run(
-                [converter, "output.svg", "-o", "output.png"],
+                [converter, "output.svg", "-o", "output.png", "--zoom", str(png_zoom)],
                 check=True,
             )
             print("Rendered output.png from output.svg")

@@ -28,9 +28,6 @@ jobs:
       - name: Render SVG
         run: python3 render.py
 
-      - name: Render PNG
-        run: rsvg-convert output.svg -o output.png
-
       - name: Commit outputs
         run: |
           if git diff --quiet -- output.svg output.png; then
