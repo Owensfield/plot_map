@@ -177,20 +177,25 @@ def render(data):
         char_width = key.get("char_width", 8)
         columns = key.get("columns", 1)
         column_gap = key.get("column_gap", 20)
+        column_width = key.get("column_width")
         items = key["items"]
         rows_per_col = key.get("rows_per_col")
         if not rows_per_col:
             rows_per_col = math.ceil(len(items) / columns)
 
         col_widths = [0] * columns
-        for idx, item in enumerate(items):
-            col = idx // rows_per_col
-            if col >= columns:
-                col = columns - 1
-            text = escape(item.get("text", ""))
-            rect_w = max(40, len(text) * char_width) + pad_x * 2
-            if rect_w > col_widths[col]:
-                col_widths[col] = rect_w
+        if column_width:
+            for col in range(columns):
+                col_widths[col] = column_width
+        else:
+            for idx, item in enumerate(items):
+                col = idx // rows_per_col
+                if col >= columns:
+                    col = columns - 1
+                text = escape(item.get("text", ""))
+                rect_w = max(40, len(text) * char_width) + pad_x * 2
+                if rect_w > col_widths[col]:
+                    col_widths[col] = rect_w
 
         col_offsets = [0] * columns
         running = 0
